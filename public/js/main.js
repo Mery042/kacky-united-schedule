@@ -22,7 +22,7 @@ import { Playlist } from './playlist.js';
     };
 
     async function connectToServer() {
-        const ws = new WebSocket('https://tmuf-status-handler.herokuapp.com:7071/ws');
+        const ws = new WebSocket('wss://tmuf-status-handler.herokuapp.com:7071');
         return new Promise((resolve, reject) => {
             const timer = setInterval(() => {
                 if(ws.readyState === 1) {
