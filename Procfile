@@ -1,1 +1,1 @@
-web: node router.js
+worker: node router.js
