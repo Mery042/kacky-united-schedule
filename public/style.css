@@ -1,0 +1,50 @@
+body{
+    text-align: center;
+    background: #5c838d;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+  
+#main{
+  background: #304449;
+  border-radius: 5px;
+  height: 50%;
+}
+  
+#timeLeft{
+  font-family: sans-serif;
+  color: #fff;
+  display: none;
+  font-weight: 100;
+  font-size: 30px;
+  background: #550003;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#maps > figure {
+  width: 30%;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+figure > * {
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+#currentMap {
+  background: rgba(255, 255, 0, 0.2);
+}
+
+.icon {
+  display: inline-block;
+  width: 5em;
+  height: 5em;
+  stroke-width: 0;
+  stroke: rgb(255, 255, 213);
+  fill: rgb(255, 255, 213);
+}
