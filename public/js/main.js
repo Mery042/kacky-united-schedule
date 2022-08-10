@@ -3,9 +3,13 @@ import { Playlist } from './playlist.js';
 
 (async function() {
     const ws = await connectToServer();
+    setInterval()
     ws.onmessage = function(event) {
         var msg = JSON.parse(event.data);
-      
+        setInterval(() => {
+            ws.ping();
+        }, 45000);
+
         switch(msg.type) {
           case "init":
             Playlist.init(msg.index, msg.playlist);
