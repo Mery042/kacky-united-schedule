@@ -36,6 +36,6 @@ import { Playlist } from './playlist.js';
 
     // Ping to prevent the server to close Idle connections
     setInterval(() => {
-        console.log(ws);
+        ws.send("Still here :)");
     }, 45000);
 })();
