@@ -3,10 +3,6 @@ import { Playlist } from './playlist.js';
 
 (async function() {
     const ws = await connectToServer();
-    // Ping to prevent the server to close Idle connections
-    setInterval(() => {
-        ws.ping();
-    }, 45000);
 
     ws.onmessage = function(event) {
         var msg = JSON.parse(event.data);
@@ -37,4 +33,9 @@ import { Playlist } from './playlist.js';
             }, 10);
         });
     }
+
+    // Ping to prevent the server to close Idle connections
+    setInterval(() => {
+        console.log(ws);
+    }, 45000);
 })();
